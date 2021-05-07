@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: IBM Plex Sans;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url("/font/IBMPlexSans.woff2") format("woff2"), url("/font/IBMPlexSans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans Light";
+    src: url("/font/IBMPlexSans-Light.woff2") format("woff2"), url("/font/IBMPlexSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans Medium";
+    src: url("./font/IBMPlexSans-Medium.woff2") format("woff2"), url("/font/IBMPlexSans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+header {
+    padding: 10px 0;
+    background: #2b303a;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo a img {
+    width: 25%;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu li {
+    list-style: none;
+    margin-left: 60px;
+    padding: 7px 0;
+    position: relative;
+}
+
+.header__menu li::before {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #86bbda;
+}
+
+.header__menu li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.about {
+    height: 400px;
+    width: 100%;
+    background-image: url(./img/png9.png);
+    background-repeat: no-repeat;
+    padding-left: 54%;
+    padding-top: 8%;
+}
+
+.about h1 {
+    font-family: "IBM Plex Sans Medium";
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about p {
+    font-family: "IBM Plex Sans Light";
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.about p:last-child {
+    padding-left: 20%;
+    padding-top: 5%;
+    font-weight: bold;
+}
+
+.benefit {
+    width: 100%;
+    height: 400px;
+    background-image: url(./img/png8.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.benefit i img {
+    width: 100px;
+}
+
+.benefit i {
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit span {
+    color: white;
+    font-size: 100px;
+}
+
+.intro {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.intro__top,
+.intro__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro__top {
+    margin-bottom: 50px;
+}
+
+.intro h2 {
+    font-family: "IBM Plex Sans Medium";
+    font-size: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.intro p {
+    font-family: "IBM Plex Sans Light";
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.intro-txt {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background: #2b303a;
+    color: white;
+    padding-top: 30px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+footer i img {
+    width: 20px;
+}
+
+footer i {
+    color: white;
+    margin-right: 30px;
+}
+
+footer h4 {
+    padding-bottom: 20px;
+
+    color: #eb5624;
+}
+
+footer span {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 13px;
+}
